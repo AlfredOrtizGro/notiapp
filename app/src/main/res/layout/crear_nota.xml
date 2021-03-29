@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="ID">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c_id_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Titulo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c_titulo_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Nota">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prioridad"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:id="@+id/sp_prioridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/opciones"
+                android:padding="5dp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="50dp"
+                android:columnCount="3"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_crear_limpiar"
+                    android:text="@string/s_limpiar"
+                    android:layout_columnSpan="2"
+                    android:padding="15dp">
+                </Button>
+
+
+
+                <Button
+                    android:id="@+id/btn_crear_guardar"
+                    android:text="@string/s_guardar"
+                    android:padding="15dp">
+                </Button>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

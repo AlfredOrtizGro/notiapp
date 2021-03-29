@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>Selecciona una prioridad</item>
+        <item>Urgente</item>
+        <item>Tarea</item>
+        <item>Recordatorio</item>
+    </string-array>
+</resources>

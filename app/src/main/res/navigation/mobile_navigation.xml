@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.teambaa.notiapp.ui.mis_notas.MisNotasFragment"
+        android:label="@string/menu_mis_notas"
+        tools:layout="@layout/mis_notas" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.teambaa.notiapp.ui.crear_nota.CrearNotaFragment"
+        android:label="@string/menu_crear_nota"
+        tools:layout="@layout/crear_nota" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.teambaa.notiapp.ui.modificar_nota.ModificarNotaFragment"
+        android:label="@string/menu_editar_nota"
+        tools:layout="@layout/modificar_nota" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.teambaa.notiapp.ui.acerca_de.AcercaDeFragment"
+        android:label="@string/menu_acerca_de"
+        tools:layout="@layout/acerca_de" />
+    <fragment
+        android:id="@+id/nav_eliminar"
+        android:name="com.teambaa.notiapp.ui.eliminar.EliminarFragment"
+        android:label="@string/menu_eliminar"
+        tools:layout="@layout/eliminar" />
+
+</navigation>

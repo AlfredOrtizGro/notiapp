@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Notiapp</string>
+    <string name="nav_header_title">Equipo 10</string>
+    <string name="nav_header_subtitle">Aplicación de notas</string>
+
+    <string name="menu_mis_notas">Mis notas</string>
+    <string name="menu_crear_nota">Crear nota</string>
+    <string name="menu_editar_nota">Editar nota</string>
+    <string name="menu_acerca_de">Acerca de</string>
+    <string name="menu_eliminar">Eliminar nota</string>
+
+    <!--Strings de la aplicación-->
+
+    <string name="s_limpiar">Limpiar</string>
+    <string name="s_guardar">Guardar</string>
+
+    <string name="texto_acercade">Esta aplicación permite a sus usuarios crear y editar notas rapidas</string>
+</resources>

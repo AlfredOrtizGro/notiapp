@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="4">
+
+                <EditText
+                    android:id="@+id/m_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresa ID"
+                    android:layout_columnSpan="2"
+                    android:layout_gravity="fill_horizontal"
+                    android:padding="10dp"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/m_btn_buscar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnSpan="2"
+                    android:text="Buscar"/>
+
+            </GridLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Titulo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_titulo_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Nota">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/m_nota"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prioridad"
+                android:padding="5dp"/>
+
+            <Spinner
+                android:id="@+id/m_sp_prioridad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/opciones"
+                android:padding="5dp" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="50dp"
+                android:columnCount="3"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/m_btn_limpiar"
+                    android:text="@string/s_limpiar"
+                    android:layout_columnSpan="2"
+                    android:padding="15dp">
+                </Button>
+
+
+
+                <Button
+                    android:id="@+id/m_btn_guardar"
+                    android:text="@string/s_guardar"
+                    android:padding="15dp">
+                </Button>
+
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
